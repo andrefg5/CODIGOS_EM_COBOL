@@ -1,0 +1,27 @@
+#line 1 "ler.cob"
+ IDENTIFICATION DIVISION.
+ PROGRAM-ID. ler.
+
+ DATA DIVISION.
+ WORKING-STORAGE SECTION.
+ 01 NUM1 PIC 9(3).
+ 01 NUM2 PIC 9(3).
+ 01 RESULT PIC 9(4).
+
+ PROCEDURE DIVISION.
+ DISPLAY "Digite o primeiro número: " 
+ ACCEPT NUM1
+
+ DISPLAY "Digite o segundo número: " 
+ ACCEPT NUM2
+
+ COMPUTE RESULT = NUM1 + NUM2
+ DISPLAY "Soma: " RESULT
+
+ IF NUM1 > NUM2
+ DISPLAY "Primeiro é maior." 
+ ELSE
+ DISPLAY "Segundo é maior ou igual." 
+ END-IF
+
+ STOP RUN.
